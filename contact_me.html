@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head> 
+        <meta charset="utf-8">
+        <meta name="description" content="My Personal Blog">
+        <meta name="keywords" content="Personal, Blog, Me, Contact">
+        
+        <title>Gatis Berzins' Personal Blog - Contact me</title>
+        <link rel="stylesheet" type="text/css" href="Styles/Stylesheet.css"> 
+        <link rel="icon" href="Images/Logo.jpg" type="image/gif" sizes="16x16">
+</head>
+
+<body style="background-image: url(Images/background.jpg);background-attachment: fixed;background-size: cover;">
+        <header>
+            <img class="logo" src="Images/Logo.jpg" alt="Logo" >
+            
+            <h1><span>Contact Me</span></h1>
+        </header>     
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home Page </a></li>
+                <li><a href="most_recent_blog.html" > Most Recent Blog </a></li>
+                <li><a href="archive.html" > Archive </a></li>
+                <li><a id="active4" href="contact_me.html" > Contact Me </a></li>
+            </ul>
+        </nav>
+            <h2>Contact Me</h2>
+    
+        <section style="border: 2px solid grey;margin-bottom: 20px;padding-left: 10px; padding-bottom: 10px">
+            <p>Feel free to contact me using the form below if you have any constructive critism.<p>
+                    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2329.4348338465466!2d-8.462274883866876!3d54.27857498018506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee84ef3fb4b37%3A0xc76b5b21d985fb79!2sInstitute%20of%20Technology%20Sligo!5e0!3m2!1sen!2sie!4v1618787522192!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </section>
+
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                <option value="ireland">Ireland</option>
+                    
+                </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write some constructive criticism please." style="height:200px"></textarea>
+
+            <input type="submit" value="Send">
+
+            </form>
+        </div>
+    <footer>Copyrighted by Gatis Berzins 2021</footer>
+    
+</body>
+
+</html>
