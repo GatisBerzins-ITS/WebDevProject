@@ -1,32 +1,49 @@
-nav
-{
+/* General Design */
+
+body{
     background-color: black;
-    border: 2px solid white;
+    font-family: Courier;
+    color: white;
+}
+header{
+    padding: 15px;
+    text-align: center;
+}
+.logo {
+    float: left;
+    width: 90px;
+    height: 90px;
+    border-radius: 130px;   
+}
+span{ 
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.5);
+}
+.padleft {
+    padding-left: 10px;
 }
 
-nav ul
-{
+/* Nav Design */
+nav{
+    background-color: white;
+    margin-left: 520px;
+    margin-right: 500px;
+}
+nav ul{
     text-align: center;
     font-size: 1.2em; 
 }
-
-nav ul li
-{
+nav ul li{
     list-style-type: none;
     display: inline;
 }
-
-nav ul li a
-{
-    color: white;
+nav ul li a{
+    color: black;
     text-decoration: none;
 }
-
-nav
-{
+nav{
     padding: 3px;
 }
-
 nav ul li:nth-child(1) a{
     
     padding: 15px;
@@ -34,11 +51,9 @@ nav ul li:nth-child(1) a{
     border: 2px solid white;
     border-radius: 10px;
 }
-
 nav ul li:nth-child(1):hover a{
     background-color: white;
 }
-
 nav ul li:nth-child(2) a{
     
     padding: 15px;
@@ -46,137 +61,47 @@ nav ul li:nth-child(2) a{
     border: 2px solid white;
     border-radius: 10px;
 }
-
 nav ul li:nth-child(2):hover a{
     background-color: white;
 }
-
 nav ul li:nth-child(3) a{
     
     padding: 15px;
     margin: 5px;
-    border: 2px solid aqua;
+    border: 2px solid white;
     border-radius: 10px;
 }
-
 nav ul li:nth-child(3):hover a{
     background-color: aqua;
 }
-
 nav ul li:nth-child(4) a{
     
     padding: 15px;
     margin: 5px;
-    border: 2px solid aqua;
+    border: 2px solid white;
     border-radius: 10px;
 }
-
 nav ul li:nth-child(4):hover a{
     background-color: aqua;
 }
-
-
-#active1 {
+.active {
     background-color: aqua;
 }
 
-#active2 {
-    background-color: aqua;
-}
 
-#active3 {
-    background-color: aqua;
-}
-
-#active4 {
-    background-color: aqua;
-}
-
-body
-{
-    background-color: black;
-    font-family: Courier;
-    color: white;
-}
-
-header{
-    padding: 15px;
-    text-align: center;
-}
-
-.logo {
-    float: left;
-    width: 90px;
-    height: 90px;
-    border-radius: 130px;   
-}
-
-.logo2 {
-    float: right;
-    width: 90px;
-    height: 90px;
-    border-radius: 130px;   
-}
-
-span{ 
-   background: rgb(0, 0, 0);
-   background: rgba(0, 0, 0, 0.5);
-}
-
-footer {
-    color: white;
-    clear: both;
-    border: 2px solid white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 30px;
-    height: 50px;
-    background-color: black;
-    text-align: center;
-    
-    
-}
-
-footer ul li{
-    list-style-type: none;
-    color: white;
-    display: inline;
-    padding: 15px;  
-}
-
-footer ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-.padleft {
-    padding-left: 10px;
-}
-
-
-
+/* Ordered List Design */
 ol {
     padding-left: 345px;
     list-style: none; counter-reset: li;
 }
-
 ol li::before {
     content: counter(li) "."; color: #edd72f;
   display: inline-block; width: 1em;
   margin-left: -1em
 }
-
 li {counter-increment: li}
 
-#MostRecentBlogSection {
-    height:1455px;
-    border:2px solid #edd72f;
-    margin-top: 20px;
-    background-attachment: scroll;
-    background-size: cover;
-}
-
+/* Archive Design */
 #ArchiveSection {
         height: inherit;
     border:2px solid #aa21db;
@@ -186,38 +111,26 @@ li {counter-increment: li}
 
 }
 
-table{
-    margin: 20px;
-    width: 640px;
-    height: 360px;
-}
-table tr th {
-    color: white
-}
-
-textarea {
-    height: 5em;
-    width: 25em;
+/* Most Recent Blog Design */
+#MostRecentBlogSection {
+    height:1455px;
+    border:2px solid #edd72f;
+    margin-top: 20px;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
-.required:after { 
-    content:"*"; 
-    color: red;
-}
-
-
+/* Contact Me */
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
 }
-
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
@@ -226,15 +139,38 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #45a049;
 }
-
-/* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
   background-color: #505050;
   padding: 20px;
+}
+
+/* Footer Design */
+footer {
+    color: white;
+    clear: both;
+    border: 2px solid white;
+    position: relative;
+    bottom: 0;
+    width: 20%;
+    margin-top: 30px;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    margin-left: 40%;
+    
+    
+}
+footer ul li{
+    list-style-type: none;
+    color: white;
+    display: inline;
+    padding: 15px;  
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
 }
